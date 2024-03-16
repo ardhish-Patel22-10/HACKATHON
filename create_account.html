@@ -27,6 +27,16 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        
+
+        document.querySelector("form[name='createAccountForm']").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Assuming you want to navigate to api.html after form submission
+            window.location.href = "api.html";
+        });
+    </script>
 
 </body>
 </html>
