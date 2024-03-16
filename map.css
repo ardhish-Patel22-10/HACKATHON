@@ -3,6 +3,8 @@
     height: 400px;
     width: 100%;
     padding-top: 170px;
+    border-radius: 10px;
+    
   }
 
   /* Style the modal dialog */
