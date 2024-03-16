@@ -176,3 +176,11 @@
   .intmap{
     font-size: 20px;
   }
+
+  .Submit{
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #012a4a;
+    color: #8ECAE6;
+    font-family: "Madimi One",sans-serif;
+  }

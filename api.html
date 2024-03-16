@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dark Blue Theme Website</title>
   <link rel="stylesheet" href="ap.css">
+  <style>
+    .blur {
+      filter: blur(2px);
+      pointer-events: none;
+    }
+    .feedback-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* background-color: rgb(0, 19, 101); */
+      background-image: linear-gradient(to bottom right, #012a4a, #8ECAE6);
+      padding: 40px;
+      border: 1px solid rgb(254, 254, 254);
+      z-index: 1000;
+      display: none;
+      border-radius: 15px;
+    }
+  </style>
 </head>
 <body>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,9 +42,7 @@
       </nav>
       <div class="username">User info</div>
     </div>
-  </header>
-
-  <main>
+  </header><main>
     <!-- Your main content goes here -->
     <section>
         <div class="content">
@@ -43,7 +60,7 @@
           <p class="intmap">Click on the below image to view the alerts and notification regarding road closures or emergencies affecting your route </p>
         </div>
         <div class="image" onclick="openLink('https://example.com')">
-          <img src="Notification.jpg" alt="Image 2">
+          <img src="notification.jpg" alt="Image 2">
         </div>
       </section>
   
@@ -59,19 +76,36 @@
   
       <section>
         <div class="content">
-          <p class="interactivemaps">FEEDBACK AND REPORTING</p><br>
-          <p class="intmap">"We'd love to hear from you! Share your thoughts on Jambuster and help us enhance your commuting experience"</p>
+          <h2>FEEDBACK AND REPORTING</h2>
+          <p>"We'd love to hear from you! Share your thoughts on Jambuster and help us enhance your commuting experience"</p>
         </div>
-        <div class="image" onclick="openLink('https://example.com')">
+        <div class="image" onclick="showFeedbackBox()">
           <img src="feedback.webp" alt="Image 4">
         </div>
       </section>
   </main>
 
-<script src="i.js"></script>
+  <div class="feedback-box">
+    <textarea rows="4" cols="50"></textarea>
+    <button class="Submit">Submit</button>
+    <button onclick="hideFeedbackBox()" class="Submit">Cancel</button>
+  </div>
+
+  <script src="i.js"></script>
 
   <footer>
     <p>&copy; 2024 JᗩᗰᗷᑌᔕTEᖇ </p>
   </footer>
+
+  <script>
+    function showFeedbackBox() {
+      document.querySelector('.feedback-box').style.display = 'block';
+    }
+
+    function hideFeedbackBox() {
+      document.querySelector('body').classList.remove('blur');
+      document.querySelector('.feedback-box').style.display = 'none';
+    }
+  </script>
 </body>
 </html>
