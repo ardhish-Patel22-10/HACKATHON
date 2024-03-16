@@ -6,7 +6,11 @@
 <title>API Map with Traffic and Bicycle Layer</title>
 <style>
   /* Set the map element size */
+  body{
+    background-color: #8ECAE6;
+  }
   #map {
+    font-family: "Madimi One", sans-serif;
     height: 400px;
     width: 100%;
     border-radius: 10px;
@@ -14,15 +18,18 @@
 
   /* Style for form and buttons */
   form {
+    font-family: "Madimi One", sans-serif;
     margin-bottom: 20px;
   }
 
   label {
+    font-family: "Madimi One", sans-serif;
     display: block;
     margin-bottom: 5px;
   }
 
   input[type="text"] {
+    font-family: "Madimi One", sans-serif;
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -30,26 +37,33 @@
   }
 
   button {
+    font-family: "Madimi One", sans-serif;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #012a4a;
+    color: #8ECAE6;
     border: none;
     cursor: pointer;
     font-size: 16px;
     border-radius: 10px;
-    
+    transition: all 0.2s ease-in;
+    margin-right: 5px;
   }
 
   button:hover {
-    background-color: #0056b3;
+    font-family: "Madimi One", sans-serif;
+    transform: scale(1.05);
   }
-
   button:focus {
+    font-family: "Madimi One", sans-serif;
     outline: none;
   }
+
 </style>
 </head>
 <body>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <!-- Map container -->
 <div id="map"></div>
 

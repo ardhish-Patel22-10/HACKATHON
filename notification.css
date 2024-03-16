@@ -47,3 +47,22 @@
         font-size: 50px;
         font-weight: 400;
     }
+    #back{
+      background-color: #012a4a;
+      color: aliceblue;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: all 0.2s ease-in;
+      font-family: "Madimi One", sans-serif;
+      font-size: 15px;
+  }
+  #back:hover{
+      font-family: "Madimi One", sans-serif;
+      border-radius: 8px;
+      transform: scale(1.1);
+      box-shadow: 1px 1px black;
+  }
+  ul {
+      list-style-type: none;
+      padding-left: 230px;
+  }

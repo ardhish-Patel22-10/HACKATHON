@@ -6,6 +6,9 @@
 <title>Live News</title>
 <style>
   /* Style for news container */
+  body{
+    background-image: linear-gradient(to bottom right, #012a4a, #8ECAE6);
+  }
   #news-container {
     padding: 20px;
     max-width: 600px;
@@ -104,6 +107,13 @@
   window.onload = function() {
     fetchNews();
   };
+
+
 </script>
+<div>
+  <ul>
+   <li><button id="back" onclick="window.open('api.html')">Back</button></li>
+  </ul>
+</div>
 </body>
 </html>
