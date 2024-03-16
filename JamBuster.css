@@ -70,8 +70,8 @@ nav ul li button:hover {
 
 .welcome{
     color: #8ECAE6;
-    font-family: "Madimi One", sans-serif;
-    text-align: center;
+   font-family: "Madimi One", sans-serif;
+    text-align: center; 
     padding-top: 10%;
     font-size: 60px;
     transition: all 0.3s ease-out;
