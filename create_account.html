@@ -21,7 +21,8 @@
             <label  for="name"><p class="ab">Password:</p></label>
             <input type="password" name="password" id="password" class="password" placeholder="Password" required>
             <button type="submit">Create Account</button>
-        </form>
+
+            <form name="createAccountForm" action="create_account.php" method="POST" onsubmit="return validateCreateAccountForm()">
         <div class="options">
             <a href="index.html">Back to Login</a>
         </div>
